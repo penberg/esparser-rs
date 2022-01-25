@@ -1,0 +1,5 @@
+// Test parsing import statements
+// RUN: @parser @file
+
+import
+// CHECK: Parse error: Declaration or statement expected.

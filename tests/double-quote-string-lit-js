@@ -1,0 +1,8 @@
+"Double quote string literal"
+
+"This is \"quoting\" within a double quote string literal."
+
+"Multi-line \
+string literal"
+
+"\\"

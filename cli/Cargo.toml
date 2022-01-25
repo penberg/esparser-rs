@@ -1,0 +1,22 @@
+# Copyright 2022 Pekka Enberg and contributors
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "tsparser"
+version = "0.0.0"
+authors = ["Pekka Enberg"]
+default-run = "tsparser"
+edition = "2021"
+license = "MIT"
+
+[[bin]]
+name = "tsparser"
+path = "main.rs"
+
+[dependencies]
+structopt = "0.3.26"
+tsparser_parser = { path = "../parser" }
+utf8-chars = "1.0.2"
+
+[dev-dependencies]
+lit = "1.0.4"

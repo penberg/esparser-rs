@@ -1,0 +1,18 @@
+// Test parsing import statements
+// RUN: @parser @file
+
+import "bar"
+// CHECK: Script {
+// CHECK:     body: BlockStatement {
+// CHECK:         stmts: [
+// CHECK:             ImportDeclaration(
+// CHECK:                 ImportDeclaration {
+// CHECK:                     import_clause: None,
+// CHECK:                     module_specifier: ModuleSpecifier {
+// CHECK:                         value: "\"bar\"",
+// CHECK:                     },
+// CHECK:                 },
+// CHECK:             ),
+// CHECK:         ],
+// CHECK:     },
+// CHECK: }

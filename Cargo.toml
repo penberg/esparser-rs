@@ -1,0 +1,9 @@
+# Copyright 2022 Pekka Enberg and contributors
+# SPDX-License-Identifier: MIT
+
+[workspace]
+resolver = "2"
+members = [
+  "cli",
+  "parser",
+]
